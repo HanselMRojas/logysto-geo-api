@@ -1,0 +1,35 @@
+org: hanselmrojas
+app: logysto-geo
+service: logysto-geo
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: '20201221'
+  environment:
+    MONGO_HOST: ${param:MONGO_HOST}
+    MONGO_USER: ${param:MONGO_USER}
+    MONGO_PASS: ${param:MONGO_PASS}
+    MONGO_DB: ${param:MONGO_DB}
+    MAPS_GOOGLE_API_KEY: ${param:MAPS_GOOGLE_API_KEY}
+    MAPS_HERE_API_KEY: ${param:MAPS_HERE_API_KEY}
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors:
+              origin: '*'
+              headers:
+                - Content-Type
+      - http:
+          path: /{proxy+}
+          method: ANY
