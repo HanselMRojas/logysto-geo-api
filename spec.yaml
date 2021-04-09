@@ -1,0 +1,663 @@
+_type: export
+__export_format: 4
+__export_date: 2021-04-09T15:40:42.775Z
+__export_source: insomnia.desktop.app:v2021.1.1
+resources:
+  - _id: req_wrk_b9ff25164742475ab414c9fca1f050017d13bca8
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617982505797
+    created: 1617982505797
+    url: "{{ base_url }}/signin"
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "hanselmrojas",
+          "password": "SuperPassord123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1617982505797
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_b9ff25164742475ab414c9fca1f05001
+    parentId: null
+    modified: 1617846730567
+    created: 1617846730567
+    name: Logysto-Geo
+    description: ""
+    scope: designer
+    _type: workspace
+  - _id: req_wrk_b9ff25164742475ab414c9fca1f05001b3576026
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617982505794
+    created: 1617982505794
+    url: "{{ base_url }}/signup"
+    name: Registro de nuevos usuarios
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "hanselmrojas",
+          "password": "SuperPassord123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1617982505794
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_wrk_b9ff25164742475ab414c9fca1f05001d94ba67c
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617982505792
+    created: 1617982505792
+    url: "{{ base_url }}/signout"
+    name: Cerrar Sesión
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: "{{bearerToken}}"
+      prefix: ""
+    metaSortKey: -1617982505792
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_wrk_b9ff25164742475ab414c9fca1f05001160bd4e8
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617982505750
+    created: 1617982505750
+    url: "{{ base_url }}/token"
+    name: Obtener un nuevo token
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: "{{bearerToken}}"
+      prefix: ""
+    metaSortKey: -1617982505750
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_wrk_b9ff25164742475ab414c9fca1f05001d76132b8
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617982552830
+    created: 1617982505742
+    url: "{{ base_url }}/geo"
+    name: Geocode
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "address": "string"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e17511eeac40418fa161a986d52415aa
+    authentication:
+      type: bearer
+      token: "{{bearerToken}}"
+      prefix: ""
+    metaSortKey: -1617982505742
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_673e52a4709c4cac82793f509d611634
+    parentId: fld_19e14c397bba4a93b0f3c134ee95128a
+    modified: 1617971845051
+    created: 1617970513264
+    url: "{{ _.host }}/signin"
+    name: SignIn
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "hanselmrojas",
+        	"password": "Tinkud2021"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e115be223fdd4ff784f5adbf38b6e3fe
+    authentication: {}
+    metaSortKey: -1617970513264
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_19e14c397bba4a93b0f3c134ee95128a
+    parentId: fld_8d1fc6af360440f3a89b1b9723ce79f9
+    modified: 1617982166537
+    created: 1617970422738
+    name: Auth
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1617970422738
+    _type: request_group
+  - _id: fld_8d1fc6af360440f3a89b1b9723ce79f9
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617982165172
+    created: 1617982161561
+    name: ManualTest
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1617976242803.5
+    _type: request_group
+  - _id: req_221e1cbe7b624f77b8392faea1f273a4
+    parentId: fld_19e14c397bba4a93b0f3c134ee95128a
+    modified: 1617971944626
+    created: 1617970797555
+    url: "{{ _.host }}/signup"
+    name: SignUp
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "hanselmrojas",
+        	"password": "Tinkud2021"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e115be223fdd4ff784f5adbf38b6e3fe
+    authentication: {}
+    metaSortKey: -1617908627141.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c4568069b2814b60a70875b8b6da2363
+    parentId: fld_19e14c397bba4a93b0f3c134ee95128a
+    modified: 1617971392505
+    created: 1617971375674
+    url: "{{ _.host }}/signout"
+    name: SignOut
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: "{{ _.auth.accessToken }}"
+    metaSortKey: -1617893155610.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_93a3bcba9a8c4106b6c7b359a1ba46f3
+    parentId: fld_19e14c397bba4a93b0f3c134ee95128a
+    modified: 1617971313794
+    created: 1617971107645
+    url: "{{ _.host }}/token"
+    name: Get Token
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"refreshToken": "{{ _.auth.refreshToken }}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e115be223fdd4ff784f5adbf38b6e3fe
+    authentication:
+      type: bearer
+      token: "{{ _.auth.accessToken }}"
+    metaSortKey: -1617877684080.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d28abf08d25d4aa1bab6bc4b96be27f2
+    parentId: fld_5c200cc24d0d465d8ef79be9e6d169e0
+    modified: 1617972296796
+    created: 1617846741019
+    url: "{{ _.host }}/geo"
+    name: Geo
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"address": "Pradera de suba etapa 2"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5a7174044c0c474bbadfaa5666c7517d
+    authentication:
+      type: bearer
+      token: "{{ _.auth.accessToken }}"
+    metaSortKey: -1617846741019
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5c200cc24d0d465d8ef79be9e6d169e0
+    parentId: fld_8d1fc6af360440f3a89b1b9723ce79f9
+    modified: 1617982167603
+    created: 1617846735291
+    name: Geocode
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1617970422688
+    _type: request_group
+  - _id: env_161e431f33a281b420f7cffa2389c6c657214bbf
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617846730764
+    created: 1617846730764
+    name: Base Environment
+    data:
+      base_url: "{{ scheme }}://{{ host }}{{ base_path }}"
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1617846730764
+    _type: environment
+  - _id: jar_161e431f33a281b420f7cffa2389c6c657214bbf
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617846730767
+    created: 1617846730767
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_e3963f533f9943cdb151f8c9770b02e3
+    parentId: wrk_b9ff25164742475ab414c9fca1f05001
+    modified: 1617982696757
+    created: 1617846730577
+    fileName: Logysto-Geo
+    contents: >-
+      openapi: 3.0.0
+
+      servers:
+        - url: https://dh56ae9eq3.execute-api.us-east-1.amazonaws.com/dev/v1
+        - url: http://localhost:3000/dev/v1
+      info: 
+        title: Logysto-Geo
+        description: API para obtener Coordenadas según dirección en texto
+        summary: Este es un test para la prueba de desarrollo de Logysto backend
+        license:
+          name: Apache 2.0
+          url: https://www.apache.org/licenses/LICENSE-2.0.html
+        server:
+          url: https://dh56ae9eq3.execute-api.us-east-1.amazonaws.com/dev/v1
+          description: Servidor de demo
+        version: 1.0.0
+        contact:
+          name: Hansel M. Rojas
+          email: co.hanselmorales@gmail.com
+          url: hanselmrojas.com
+      components:
+        securitySchemes:
+          bearerAuth:
+            type: http
+            scheme: bearer
+            bearerFormat: JWT
+        responses:
+          jwt400:
+            description: El token de autenticación no es válido
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/messageResponse'
+                example:
+                  message:  Token inválido. Parece que no pudimos validar la integridad del token. Vuelve a solicitar uno nuevo
+          jwt401:
+            description: El token de autenticación ha expirado
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/messageResponse'
+                example:
+                  message:  Token de sesión ha expirado. Vuelva a solicitar uno nuevo!
+          serverError:
+            description: Error interno del servidor
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/messageResponse'
+                example:
+                  message: Tenemos problemas con el servidor. Gracias por tu paciencia
+        schemas:
+          arrayOfDirections:
+            type: array
+            items:
+              type: object
+              properties:
+                provider:
+                  type: string
+                  description: Provedor de Mapas
+                slug:
+                  type: string
+                  description: Slug del nombre del proveedor en el campo provider
+                raw:
+                  type: object
+                  description: Respuesta exitosa del proveedor de Mapas
+          messageResponse:
+            type: object
+            properties:
+               message:
+                 type: string
+                 description: mensaje de resultado de operación
+          userAuthParams:
+            type: object
+            properties:
+              username: 
+                type: string
+                example: hanselmrojas
+              password:
+                type: string
+                example: SuperPassord123
+          userSessionResponse:
+            type: object
+            properties:
+              accessToken: 
+                type: string
+                descripion: d
+              refreshToken:
+                type: string
+      paths:
+        /signin:
+          post:
+            summary: Login
+            description: Este método logea un usuario dado la correcta combinación de nombre de usuario y password.
+            requestBody:
+              content:
+                application/json:
+                  schema:
+                    $ref: '#/components/schemas/userAuthParams'
+                  examples:
+                    account:
+                      value:
+                        username: hanselmrojas
+                        password: Hello123
+            responses:
+              '200':
+                description: Al momento de valdiar las credenciales correctamente este devuleve accessToken y refreshToken correspondiente
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/userSessionResponse'
+                    example:
+                      accessToken: <jwt_token>
+                      refreshToken: <session_token>
+              '400':
+                description: BadRequest El password enviado no concide con el bcrypt hash en la db
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/messageResponse'
+              '404':
+                description: NotFound el usuario no fue encontrado
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/messageResponse'
+              '500':
+                $ref: '#/components/responses/serverError'
+            tags:
+              - Auth
+        /signup:
+          post:
+            summary: Registro de nuevos usuarios
+            description: Este método da de alta en el sistema un nuevo usuario
+            requestBody:
+              content:
+                application/json:
+                  schema:
+                    $ref: '#/components/schemas/userAuthParams'
+                  examples:
+                    account:
+                      value:
+                        username: hanselmrojas
+                        password: Hello123
+            responses:
+              '201':
+                description: Al momento crear un nuevo usuario correctamente este devuleve accessToken y refreshToken correspondiente
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/userSessionResponse'
+                    example:
+                      accessToken: <jwt_token>
+                      refreshToken: <session_token>
+              '400':
+                description: Usuario ya se encuentra registrado
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/messageResponse'
+              '500':
+                 $ref: '#/components/responses/serverError'
+            tags:
+              - Auth
+        /signout:
+          get:
+            security:
+              - bearerAuth: []
+            summary: Cerrar Sesión
+            description: Este método cierra la sessión de usuario desabilitando el refreshToken correspondiente
+            responses:
+              '201':
+                description: Al momento crear un nuevo usuario correctamente este devuleve accessToken y refreshToken correspondiente
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/messageResponse'
+                    example:
+                      message: La sesión se ha cerrado correctamente
+              '400':
+                $ref: '#/components/responses/jwt400'
+              '401':
+                $ref: '#/components/responses/jwt401'
+              '500':
+                 $ref: '#/components/responses/serverError'
+            tags:
+              - Auth
+        /token:
+          post:
+            security:
+              - bearerAuth: []
+            summary: Obtener un nuevo token
+            description: Este método permite obtener un nuevo accessToken dado un refeshToken correspondiente a la sesión actual del usuario
+            responses:
+              '200':
+                description: El servidor responde un nuevo accessToken con duración de 60 min.
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        accessToken:
+                          type: string
+                          description: JWT Token expiración 60 min
+                    example:
+                      message: La sesión se ha cerrado correctamente
+              '400':
+                $ref: '#/components/responses/jwt400'
+              '401':
+                $ref: '#/components/responses/jwt401'
+              '500':
+                 $ref: '#/components/responses/serverError'
+            tags:
+              - Auth
+        /geo:
+          post:
+            security:
+              - bearerAuth: []
+            summary: Geocode
+            description: Obtener coordenadas de una dirección en una línea
+            requestBody:
+              content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                         address:
+                           type: string
+                           description: Dirección en una línea
+                    examples:
+                      account:
+                        value:
+                          address: CC Plaza imperial Suba, Bogotá, Colombia
+            responses:
+              '200':
+                description: Respuesta exitosa en la consulta a los proveedores de Mapas existentes en el sistema
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/arrayOfDirections'
+              '400':
+                $ref: '#/components/responses/jwt400'
+              '401':
+                $ref: '#/components/responses/jwt401'
+              '500':
+                 $ref: '#/components/responses/serverError'
+            tags:
+              - Geocoding
+    contentType: yaml
+    _type: api_spec
+  - _id: env_51176f21596a416f8c839bdb7830a67f
+    parentId: env_161e431f33a281b420f7cffa2389c6c657214bbf
+    modified: 1617973102516
+    created: 1617970430770
+    name: Dev
+    data:
+      host: http://localhost:3000/dev/v1
+      auth:
+        accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzA0ZjYzZDY1MjMxMmY2Nzc5NDMzMSIsInVpZCI6IjYwNzA0YmY4ZjlkZWEyMjc5YjYxYmZjNiIsImlhdCI6MTYxNzk3MzA5MSwiZXhwIjoxNjE3OTc2NjkxfQ.1ER7Q3V5rk73vWhSICJySMn8fRWIGQTQGRbGMTbn7X8
+        refreshToken: 45ee164a9f2a5f88fbaf2ab2cce4e4f99001b25ff2b193ade9c0406dc3f11733a54a07dfaf142fe611221d6a8ae04d5a9a00a033c866b43943fb0f92ffe1d7a3b757407bbc30c5fb7bd13a7e4f64ca977d87b98eff961d282665614ee4e1eabd3a8697dd53293e77e989e5c7084cfdcbe4b93fc7cc69141a4ad4bb7c8ad55fd1
+    dataPropertyOrder:
+      "&":
+        - host
+        - auth
+      "&~|auth":
+        - accessToken
+        - refreshToken
+    color: "#ff6161"
+    isPrivate: false
+    metaSortKey: 1617970430770
+    _type: environment
+  - _id: env_a4b7d3cbba6e4707b9b6a299d28093e5
+    parentId: env_161e431f33a281b420f7cffa2389c6c657214bbf
+    modified: 1617972415391
+    created: 1617970434491
+    name: Demo
+    data:
+      host: http://localhost:3000/dev/v1
+      auth:
+        accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzA0NmY2NWYzYWVjMjc5YjBjNDkwNyIsInVpZCI6IjYwNzA0NmY0NWYzYWVjMjc5YjBjNDkwNiIsImlhdCI6MTYxNzk3MDkzNCwiZXhwIjoxNjE3OTc0NTM0fQ.wZFOMfPfdkC7B4KqgRDs6rH6V5DksrHcVy3Lk8XgFCU
+        refreshToken: f732ff84b62529ca473d757f98a71d811fc89ddf8b2c3e3956d3f63c27d9e9894fe4c682e9aab1e3d1c2c5afbf51ad6a6c806cc6d96a7454f8462bb0772bf7b519ede837b53494f01300eea57d377240d2578f9e388e36a37ae7d051056fc8e1c97a1b6013c005fa41f9d4c7f9c4676abddc2f3d9df9c244660bc3850801dbb0
+    dataPropertyOrder:
+      "&":
+        - host
+        - auth
+      "&~|auth":
+        - accessToken
+        - refreshToken
+    color: "#ffea61"
+    isPrivate: false
+    metaSortKey: 1617970434491
+    _type: environment
+  - _id: env_env_161e431f33a281b420f7cffa2389c6c657214bbf_sub
+    parentId: env_161e431f33a281b420f7cffa2389c6c657214bbf
+    modified: 1617982415961
+    created: 1617975171105
+    name: OpenAPI env
+    data:
+      scheme: https
+      base_path: /v1
+      host: dh56ae9eq3.execute-api.us-east-1.amazonaws.com/dev
+      bearerToken: bearerToken
+    dataPropertyOrder:
+      "&":
+        - scheme
+        - base_path
+        - host
+        - bearerToken
+    color: null
+    isPrivate: false
+    metaSortKey: 1617975171105
+    _type: environment
