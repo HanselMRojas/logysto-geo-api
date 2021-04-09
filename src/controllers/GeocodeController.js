@@ -14,7 +14,7 @@ exports.getPosition = async (req, res, next) => {
         ...acc,
         {
           provider: current.name,
-          slig: slug(current.name, { lower: true, replacement: '_' }),
+          slug: slug(current.name, { lower: true, replacement: '_' }),
           raw
         }
       ]

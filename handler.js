@@ -35,6 +35,7 @@ app.use('/v1', routes)
 
 // Error Handler
 app.use((err, req, res, next) => {
+  console.log(err)
   if (err.status === 500) {
     res.status(500).json({
       message: 'Tenemos problemas con el servidor. Gracias por tu paciencia'
